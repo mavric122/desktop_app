@@ -4,8 +4,8 @@ conn = sqlite3.connect('MyTestBD.bd')
 
 c = conn.cursor()
 try:
-    c.execute('''CREATE TABLE users
-                (date datetime, nick char, password char, admin int) ''')
+    c.execute('''CREATE TABLE OF NOT EXISTS users
+                    (date datetime, nick char, password char, admin int) ''')  # Проверяем есть ли база и если её нет - создаём
 except:
     print("БД users уже создана! \n")
 conn.commit()  # Сохранение изменений

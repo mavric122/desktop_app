@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from users import register_user
+from db import *
 
 
 def start():
@@ -16,5 +17,7 @@ root.title("Приложение на Tkinter")  # устанавливаем з
 root.geometry("700x700")  # устанавливаем размеры окна
 
 start()
+
+
 
 root.mainloop()
