@@ -1,11 +1,11 @@
 from tkinter import *
 from tkinter import ttk
-from users import register_user
+from users import register_user, login_user
 from db import *
 
 
 def start():
-    btn_sign = ttk.Button(text='Вход')
+    btn_sign = ttk.Button(text='Вход', command=login_user)
     btn_sign.place(x=20, y=30)
 
     btn_reg = ttk.Button(text='Регистрация', command=register_user)
